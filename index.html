@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+    <title>Speed Typing</title>
+    <link rel="shortcut icon" href="./content.png">
+</head>
+<body>
+    <div id="welcomeMsg"class="welcome-msg">How fast can you type?
+    <br>
+    </div>
+    <div class="timer" id="Timer"></div>
+
+    
+    <div  > 
+        <div class=""><div class="feedback " id="Feedback">
+            <img src="/turtle.png">
+        </div></div>
+        <div id="Result" class="result boxShadow boxes">
+   
+            <div class="ResultVal" id="WPM"></div>
+            <div class="ResultVal" id="Mistakes"></div>
+            <div class="ResultVal" id="Accuracy"></div>
+
+        </div>
+        <div class="buttoncontainer">
+            <div class="tryagain">
+                <button class="tryagain boxShadow" id="TryAgain" onClick="history.go(0);">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container boxShadow boxes" id="Container">
+    <div class="text-to-show" id="TextToShow">  </div>
+    <textarea onpaste="return false;" class="input-text" id="InputText" autofocus > 
+    </textarea>
+    </div >
+     
+
+</body>
+</html>
